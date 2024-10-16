@@ -100,7 +100,7 @@ static const Key keys[] = {
 	{ 0,                            XK_F2,     spawn,          SHCMD("brave") },
 	{ MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("obsidian")  },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("floorp") },
-	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("waterfox") },
+	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("/home/zemo/Applications/waterfox.sh") },
   { MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("firefox") },
   { MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("vesktop") },
 	{ MODKEY|ShiftMask,             XK_a,      spawn,          SHCMD("pavucontrol") },
