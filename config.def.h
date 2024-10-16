@@ -88,7 +88,7 @@ static const char *termcmd[]  						= { "alacritty", NULL };
 static const char *screenshot[] 					= { "flameshot", "gui", NULL };
 static const char *shutdown[]             = { "shutdown", "now" , NULL };
 static const char *reboot[]               = { "reboot", NULL };
-static const char *emacs 									= {"emacs", NULL};
+static const char *emacs[]  							= {"emacs", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -99,7 +99,7 @@ static const Key keys[] = {
 	{ 0,                            XK_F1,     spawn,          SHCMD("rhythmbox") },
 	{ 0,                            XK_F2,     spawn,          SHCMD("brave") },
 	{ MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("obsidian")  },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("floorp") },
+	{ MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("floorp") },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("waterfox") },
   { MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("firefox") },
   { MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("vesktop") },
@@ -125,7 +125,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY|ShiftMask,             XK_f,      togglefullscr, {0} },
 	// { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	// { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
